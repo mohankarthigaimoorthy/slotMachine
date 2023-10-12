@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="slotMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jt-gqCYRe2ml6k-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="6z7-wh-7M1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-iN-Nak">
+                                <rect key="frame" x="0.0" y="347" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn7-wd-n3d">
+                                <rect key="frame" x="30" y="589" width="354" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jZ3-M3-Oik"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Spin"/>
+                                <connections>
+                                    <action selector="spinSlotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QP5-5a-Pta"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3m-YW-2uu">
+                                <rect key="frame" x="0.0" y="752" width="414" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kER-QR-icX">
+                                <rect key="frame" x="12" y="709" width="125.5" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125.5" id="2vG-qy-1Fg"/>
+                                    <constraint firstAttribute="height" constant="35" id="FTt-Rd-2M9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="RegularMode"/>
+                                <connections>
+                                    <action selector="modeSlotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="toa-uG-6j6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6z7-wh-7M1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9LL-SH-D3J"/>
+                            <constraint firstItem="6ZS-iN-Nak" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CQz-v0-fYM"/>
+                            <constraint firstItem="kER-QR-icX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Dvb-KW-5an"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ZS-iN-Nak" secondAttribute="trailing" id="FhG-Li-d0K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q3m-YW-2uu" secondAttribute="bottom" constant="50" id="HHu-om-Zz2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mn7-wd-n3d" secondAttribute="trailing" constant="30" id="RgA-0q-ko7"/>
+                            <constraint firstItem="mn7-wd-n3d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="RrO-Nz-Ux0"/>
+                            <constraint firstItem="mn7-wd-n3d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="541" id="YcD-dH-fNG"/>
+                            <constraint firstItem="q3m-YW-2uu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bpq-eS-QIF"/>
+                            <constraint firstItem="6ZS-iN-Nak" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hgV-jU-8Pq"/>
+                            <constraint firstItem="kER-QR-icX" firstAttribute="top" secondItem="mn7-wd-n3d" secondAttribute="bottom" constant="60" id="mSs-j0-jBi"/>
+                            <constraint firstItem="6ZS-iN-Nak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mlK-Va-H7b"/>
+                            <constraint firstItem="6z7-wh-7M1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mwR-9x-LRR"/>
+                            <constraint firstAttribute="bottom" secondItem="6z7-wh-7M1" secondAttribute="bottom" id="pk7-l9-HhD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6z7-wh-7M1" secondAttribute="trailing" id="sSL-iR-sPt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q3m-YW-2uu" secondAttribute="trailing" id="thh-3s-Ca6"/>
+                            <constraint firstItem="q3m-YW-2uu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vfs-GH-Hfy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiSlotPicker" destination="6ZS-iN-Nak" id="BGR-7O-CS0"/>
+                        <outlet property="modeBtn" destination="kER-QR-icX" id="Ake-r0-wps"/>
+                        <outlet property="resultLbl" destination="q3m-YW-2uu" id="YQJ-lq-AAc"/>
+                        <outlet property="spinBtn" destination="mn7-wd-n3d" id="Oqo-pO-FSk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jt-gqCYRe2ml6k-unsplash" width="3734" height="5601"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
